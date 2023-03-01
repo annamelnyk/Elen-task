@@ -1,0 +1,7 @@
+<ul class="posts-list">
+  <app-post
+    *ngFor="let post of posts"
+    [post]="post"
+    (onShowComments)="getPostComments(post)"
+  ></app-post>
+</ul>
